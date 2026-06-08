@@ -109,3 +109,22 @@ input[type="radio"] {
 #slide-5:checked ~ .captions-container .captions-inner {
   transform: translateY(-14rem);
 }
+
+#slide-1:checked ~ .controls-container .control-button[for="slide-1"],
+#slide-2:checked ~ .controls-container .control-button[for="slide-2"],
+#slide-3:checked ~ .controls-container .control-button[for="slide-3"],
+#slide-4:checked ~ .controls-container .control-button[for="slide-4"],
+#slide-5:checked ~ .controls-container .control-button[for="slide-5"] {
+  background-color: var(--active-color);
+  transform: scale(1.2);
+}
+
+.control-button:hover {
+  background-color: var(--hover-color);
+  transform: scale(1.15);
+}
+
+.control-button:active {
+  background-color: var(--pressed-color);
+  transform: scale(0.9);
+}
