@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Meme Slider</title>
+    <link rel="stylesheet" href="cssMemeSlider/styles/variables.css" />
+    <link rel="stylesheet" href="cssMemeSlider/styles/main.css" />
+    <link rel="stylesheet" href="cssMemeSlider/styles/layout.css" />
+    <link rel="stylesheet" href="cssMemeSlider/styles/slider.css" />
+  </head>
+  <body>
+    <main class="layout-container">
+      <input type="radio" name="slider" id="slide-1" checked />
+      <input type="radio" name="slider" id="slide-2" />
+      <input type="radio" name="slider" id="slide-3" />
+      <input type="radio" name="slider" id="slide-4" />
+      <input type="radio" name="slider" id="slide-5" />
+
+      <div class="slides-container main-cell">
+        <div class="slides-inner">
+          <img
+            src="cssMemeSlider/assets/images/memes/Meme-1.jpg"
+            alt="Meme 1"
+          />
+          <img
+            src="cssMemeSlider/assets/images/memes/Meme-2.jpg"
+            alt="Meme 2"
+          />
+          <img
+            src="cssMemeSlider/assets/images/memes/Meme-3.jpg"
+            alt="Meme 3"
+          />
+          <img
+            src="cssMemeSlider/assets/images/memes/Meme-4.jpg"
+            alt="Meme 4"
+          />
+          <img
+            src="cssMemeSlider/assets/images/memes/Meme-5.jpg"
+            alt="Meme 5"
+          />
+        </div>
+      </div>
+
+      <div class="controls-container cell-1">
+        <label
+          for="slide-1"
+          class="control-button"
+          title="Go to meme 1"
+        ></label>
+        <label
+          for="slide-2"
+          class="control-button"
+          title="Go to meme 2"
+        ></label>
+        <label
+          for="slide-3"
+          class="control-button"
+          title="Go to meme 3"
+        ></label>
+        <label
+          for="slide-4"
+          class="control-button"
+          title="Go to meme 4"
+        ></label>
+        <label
+          for="slide-5"
+          class="control-button"
+          title="Go to meme 5"
+        ></label>
+      </div>
+
+      <div class="captions-container cell-2">
+        <div class="captions-inner">
+          <p class="caption">Memes, memes everywhere.</p>
+          <p class="caption">One does not simply avoid memes in pop culture.</p>
+          <p class="caption">
+            So you made an exhibition about memes. That sounds so interesting.
+          </p>
+          <p class="caption">I'm just here for the "memes".</p>
+          <p class="caption">But what actually is a meme??</p>
+        </div>
+      </div>
+
+      <div class="pr-link-cell">
+        <a
+          class="pr-link"
+          href="https://github.com/Yauheni-Silkou/cssMemeSlider/pull/1"
+          target="_blank"
+          >Pull Request link</a
+        >
+      </div>
+    </main>
+  </body>
+</html>

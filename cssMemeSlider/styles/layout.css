@@ -1,0 +1,36 @@
+.layout-container {
+  display: grid;
+  width: 92%;
+  max-width: 60rem;
+  margin: 2vh auto 0 auto;
+  row-gap: 3vh;
+
+  grid-template-areas:
+    "main"
+    "c1"
+    "c2"
+    "pr-link";
+}
+
+.pr-link-cell {
+  grid-area: pr-link;
+}
+.main-cell {
+  grid-area: main;
+}
+.cell-1 {
+  grid-area: c1;
+}
+.cell-2 {
+  grid-area: c2;
+}
+
+@media (min-width: 768px) {
+  .layout-container {
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+      "main main"
+      "c2   c1"
+      "pr-link pr-link";
+  }
+}
