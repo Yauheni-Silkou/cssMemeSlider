@@ -134,3 +134,19 @@ input[type="radio"] {
   outline-color: var(--active-color);
   transform: scale(1.2);
 }
+
+.pr-link-cell a:link {
+  color: lightblue;
+}
+
+.pr-link-cell a:visited {
+  color: coral;
+}
+
+.pr-link-cell a:hover {
+  color: orange;
+}
+
+.pr-link-cell a:active {
+  color: peru;
+}

@@ -8,9 +8,13 @@
   grid-template-areas:
     "main"
     "c1"
-    "c2";
+    "c2"
+    "pr-link";
 }
 
+.pr-link-cell {
+  grid-area: pr-link;
+}
 .main-cell {
   grid-area: main;
 }
@@ -26,6 +30,7 @@
     grid-template-columns: 1fr auto;
     grid-template-areas:
       "main main"
-      "c2   c1";
+      "c2   c1"
+      "pr-link pr-link";
   }
 }
