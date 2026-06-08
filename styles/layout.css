@@ -1,0 +1,22 @@
+.layout-container {
+  display: grid;
+  width: 92%;
+  max-width: 60rem;
+  margin: 2vh auto 0 auto;
+  row-gap: 3vh;
+
+  grid-template-areas:
+    "main"
+    "c1"
+    "c2";
+}
+
+.main-cell {
+  grid-area: main;
+}
+.cell-1 {
+  grid-area: c1;
+}
+.cell-2 {
+  grid-area: c2;
+}

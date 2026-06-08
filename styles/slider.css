@@ -1,0 +1,104 @@
+input[type="radio"] {
+  position: static;
+  opacity: 0;
+  margin: 0;
+  width: 0;
+  height: 0;
+}
+
+.slides-container {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  background-color: var(--bg-color);
+}
+
+.slides-inner {
+  display: flex;
+  width: 500%;
+  transition: transform var(--transition-speed) ease-in-out;
+}
+
+.slides-inner img {
+  width: 20%;
+  height: auto;
+  display: block;
+}
+
+.captions-container {
+  width: 100%;
+  overflow: hidden;
+  height: 3.5rem;
+}
+
+.captions-inner {
+  display: flex;
+  flex-direction: column;
+  transition: transform var(--transition-speed) ease-in-out;
+}
+
+.caption {
+  height: 3.5rem;
+  line-height: 1.4;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-size: 1.1rem;
+  font-weight: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.controls-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.control-button {
+  width: 1.8rem;
+  height: 1.8rem;
+  background-color: var(--inactive-color);
+  border-radius: 50%;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease;
+
+  border: 0.6rem solid transparent;
+  background-clip: padding-box;
+}
+
+#slide-1:checked ~ .slides-container .slides-inner {
+  transform: translateX(0%);
+}
+#slide-2:checked ~ .slides-container .slides-inner {
+  transform: translateX(-20%);
+}
+#slide-3:checked ~ .slides-container .slides-inner {
+  transform: translateX(-40%);
+}
+#slide-4:checked ~ .slides-container .slides-inner {
+  transform: translateX(-60%);
+}
+#slide-5:checked ~ .slides-container .slides-inner {
+  transform: translateX(-80%);
+}
+
+#slide-1:checked ~ .captions-container .captions-inner {
+  transform: translateY(0);
+}
+#slide-2:checked ~ .captions-container .captions-inner {
+  transform: translateY(-3.5rem);
+}
+#slide-3:checked ~ .captions-container .captions-inner {
+  transform: translateY(-7rem);
+}
+#slide-4:checked ~ .captions-container .captions-inner {
+  transform: translateY(-10.5rem);
+}
+#slide-5:checked ~ .captions-container .captions-inner {
+  transform: translateY(-14rem);
+}
