@@ -20,3 +20,12 @@
 .cell-2 {
   grid-area: c2;
 }
+
+@media (min-width: 768px) {
+  .layout-container {
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+      "main main"
+      "c2   c1";
+  }
+}

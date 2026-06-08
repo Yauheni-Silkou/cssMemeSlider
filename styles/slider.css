@@ -50,6 +50,13 @@ input[type="radio"] {
   justify-content: center;
 }
 
+@media (min-width: 768px) {
+  .caption {
+    text-align: left;
+    justify-content: flex-start;
+  }
+}
+
 .controls-container {
   display: flex;
   justify-content: center;
