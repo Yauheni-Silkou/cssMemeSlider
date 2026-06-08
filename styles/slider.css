@@ -65,17 +65,31 @@ input[type="radio"] {
 }
 
 .control-button {
-  width: 1.8rem;
-  height: 1.8rem;
-  background-color: var(--inactive-color);
+  width: 3rem;
+  height: 3rem;
   border-radius: 50%;
   cursor: pointer;
+
+  border: 1rem solid transparent;
+  background-clip: content-box;
+
+  background-color: transparent;
+  outline: 0.15rem solid var(--inactive-color);
+  outline-offset: -1.05rem;
+
   transition:
     background-color 0.3s ease,
+    outline-color 0.3s ease,
     transform 0.2s ease;
+}
 
-  border: 0.6rem solid transparent;
-  background-clip: padding-box;
+.control-button:hover {
+  outline-color: var(--hover-color);
+  transform: scale(1.15);
+}
+
+.control-button:active {
+  transform: scale(0.9);
 }
 
 #slide-1:checked ~ .slides-container .slides-inner {
@@ -116,15 +130,7 @@ input[type="radio"] {
 #slide-4:checked ~ .controls-container .control-button[for="slide-4"],
 #slide-5:checked ~ .controls-container .control-button[for="slide-5"] {
   background-color: var(--active-color);
+
+  outline-color: var(--active-color);
   transform: scale(1.2);
-}
-
-.control-button:hover {
-  background-color: var(--hover-color);
-  transform: scale(1.15);
-}
-
-.control-button:active {
-  background-color: var(--pressed-color);
-  transform: scale(0.9);
 }
